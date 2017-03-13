@@ -29,6 +29,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.exe
 
 BlocksGame1/2017*
 BlocksGame1/2017*
