@@ -6,7 +6,9 @@ public class UseMultipleDisplays : MonoBehaviour {
 
 	void Start () {
         for (int i = 0; i < Display.displays.Length; i++) {
-            Display.displays[i].Activate();
+            //if (!Display.displays[i].active) {
+                Display.displays[i].Activate();
+            //}
         }
     }
 }

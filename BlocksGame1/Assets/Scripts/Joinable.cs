@@ -30,20 +30,20 @@ namespace TouchScript.Behaviors {
         void OnCollisionStay (Collision coll) {
             if (coll.gameObject.tag == "Block") {
 
-                bool checker = false;
+                bool isChecker = false;
 
-                // tie breaker for which object checks to join and preforms the join.
+                // tie breaker for which block checks to see if both should join and preforms the join.
                 // first checks position.x, then if tie, position.z
                 if (transform.position.x < coll.transform.position.x) {
-                    checker = true;
+                    isChecker = true;
                 }
                 else if (transform.position.x == coll.transform.position.x) {
                     if (transform.position.z < coll.transform.position.z) {
-                        checker = true;
+                        isChecker = true;
                     }
                 }
 
-                if (checker) {
+                if (isChecker) {
 
                     // for each touch in each gesture in each colliding object...
                     // (there should only be one gesture and one touch point per colliding, but they are designed to potentially hold more)

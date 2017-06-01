@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Depracated, use ExitSceneOnEsc
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
